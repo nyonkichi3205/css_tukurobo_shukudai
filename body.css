@@ -1,0 +1,29 @@
+/*ランキング（３位まで）*/
+ul {
+  list-style: none;
+}
+.ranking{
+  counter-reset: chapter;
+}
+.ranking li {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #cde2e8;
+}
+.ranking li:before {
+  content: "人気 "counter(chapter) " 位";
+  counter-increment: chapter;
+  margin: 0 5px 0 0;
+  padding:10px;
+  border-radius: 50px;
+  background: #30b0d8;
+  color: #fff;
+  text-align: center;
+}
+.ranking li:nth-child(2n):before {
+  background: #85aa5b;
+}
+.ranking li:nth-child(3n):before {
+  background: #c96bc4;
+}
