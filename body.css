@@ -1,3 +1,15 @@
+/* 見出し（タイトル） */
+#title {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #ffffff;/*文字色*/
+  background: #ff6347;/*背景色*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  border-radius: 8px;
+  text-align: center;
+  border-left: solid 15px #ffaf58;
+  border-right: solid 15px #ffaf58;
+}
+
 /*youtubeレイアウト*/
 .youtube {
     position: relative;
