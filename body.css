@@ -1,25 +1,111 @@
-/*ランキング（３位まで）*/
-ul {
-  list-style: none;
+html,
+body {
+  font-size: 12px;
+  height: 100%;
+  margin: 0;
 }
-.ranking{
-  counter-reset: chapter;
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 16px;
+  }
 }
-.ranking li {
-  margin-bottom: 20px;
-  border-radius: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px dashed #cde2e8;
+
+@media screen and (min-width: 980px) {
+  html,
+  body {
+    font-size: 18px;
+  }
 }
-.ranking li:before {
-  content: "人気 "counter(chapter) " 位";
-  counter-increment: chapter;
-  margin: 0 5px 0 0;
-  padding:10px;
-  border-radius: 50px;
-  background: #30b0d8;
-  color: #fff;
-  text-align: center;
+
+.item_wrapper {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 1vw 1vw;
+}
+
+.item_wrapper li {
+  width: calc(100% / 3 - 2 * 1vw);
+  margin: 1vw;
+}
+
+@media screen and (min-width: 425px) {
+  .item_wrapper li {
+    width: calc(100% / 4 - 2 * 1vw);
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .item_wrapper li {
+    width: calc(100% / 5 - 2 * 1vw);
+  }
+}
+
+.item_wrapper img {
+  vertical-align: bottom;
+}
+
+.rank1 li {
+  counter-increment: rank;
+}
+
+.rank1 li::before {
+  content: counter(rank) "位";
+  color: #bf0000;
+  font-weight: 700;
+  line-height: initial;
+}
+
+/*以下、②左側のコメント*/
+.left_balloon {
+  width: 100%;
+  margin: 10px 0;
+
+}
+
+.left_balloon .faceicon {
+  float: left;
+  margin-right: -50px;
+  max-width: 15%;
+}
+
+.left_balloon .faceicon img{
+  max-width: 40px;
+  height: auto;
+}
+.left_balloon .chatting {
+  width: 100%;
+  text-align: left;
+}
+.left_says {
+  display: inline-block;
+  position: relative; 
+  margin: 0 0 0 50px;
+  padding: 8px;
+  max-width: 50%;
+  border-radius: 12px;
+  background: #e0ffff;
+  text-align: left
+}
+
+.left_says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px; 
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #e0ffff;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.left_says p {
+  margin: 0;
+  padding: 0;
 }
 .ranking li:nth-child(2n):before {
   background: #85aa5b;
