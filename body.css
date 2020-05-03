@@ -1,117 +1,3 @@
-.ranking{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.ranking li{
-    position: relative;
-    margin: 0;
-    padding: 0 0 16px 16px;
-    border-bottom: 1px dotted #ccc;
-    font-size:3vw;
-}
-.ranking li::before{
-    position: absolute;
-    top: 7px;
-    left: 1px;
-    color: #d05;
-    content: "★";
-    font-size: 1.5vw;
-}
-.ranking li:first-child::before,
-.ranking li:nth-child(2)::before,
-.ranking li:nth-child(3)::before{
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-bottom: 10px solid #fb0;
-    content: "";
-}
-.ranking li:first-child::after,
-.ranking li:nth-child(2)::after,
-.ranking li:nth-child(3)::after{
-    position: absolute;
-    top: 9px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 6px solid #fb0;
-    border-top: 3px solid transparent;
-    border-bottom: 6px solid #f90;
-    content: "";
-}
-.ranking li:nth-child(2)::before{
-    border-bottom: 10px solid #ccc;
-}
-.ranking li:nth-child(2)::after{
-    border: 6px solid #ccc;
-    border-top: 3px solid transparent;
-    border-bottom: 6px solid #aaa;
-}
-.ranking li:nth-child(3)::before{
-    border-bottom: 10px solid #d98;
-}
-.ranking li:nth-child(3)::after{
-    border: 6px solid #d98;
-    border-top: 3px solid transparent;
-    border-bottom: 6px solid #c76;
-}
-.ranking li span{
-    color: #9ab;
-    font-size: 2vw;
-}
-
-/*以下、②左側のコメント*/
-.left_balloon {
-  width: 100%;
-  margin: 10px 0;
-
-}
-
-.left_balloon .faceicon {
-  float: left;
-  margin-right: -50px;
-  max-width: 15%;
-}
-
-.left_balloon .faceicon img{
-  max-width: 45px;
-  height: auto;
-}
-.left_balloon .chatting {
-  width: 100%;
-  text-align: left;
-}
-.left_says {
-  display: inline-block;
-  position: relative; 
-  margin: 0 0 0 60px;
-  padding: 8px;
-  max-width: 50%;
-  border-radius: 12px;
-  background: #e0ffff;
-  text-align: left
-}
-
-.left_says:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 3px; 
-  left: -19px;
-  border: 8px solid transparent;
-  border-right: 18px solid #e0ffff;
-  -webkit-transform: rotate(35deg);
-  transform: rotate(35deg);
-}
-.left_says p {
-  margin: 0;
-  padding: 0;
-}
-
 /*youtubeレイアウト*/
 .youtube {
     position: relative;
@@ -128,4 +14,122 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+.ranking1_box {
+    margin: 2em 0;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.ranking1_box .box-title1 {
+    font-size: 3vw;
+    background: #daa520;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.ranking1_box p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.ranking2_box {
+    margin: 2em 0;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.ranking2_box .box-title2 {
+    font-size: 3vw;
+    background: #c0c0c0;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.ranking2_box p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.ranking3_box {
+    margin: 2em 0;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.ranking3_box .box-title3 {
+    font-size: 3vw;
+    background: #a52a2a;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.ranking3_box p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+/*吹き出し（機構おじさん）*/
+.balloon_l,
+.balloon_r{
+  margin: 30px 0;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start; /*縦位置を上揃え*/
+/*   align-items: center; */ /*縦位置を真ん中揃え*/
+}
+.balloon_r{
+  justify-content:flex-end;
+}
+.faceicon img{
+  width: 80px; /*任意のサイズ*/
+  height: auto;
+}
+.balloon_r .faceicon{
+  margin-left:25px;
+}
+.balloon_l .faceicon{
+  margin-right:25px;
+}
+.balloon_r .faceicon{
+  order:2 !important;
+}
+.says_l {
+  border:2px solid #000;
+  font-weight: bold;
+  max-width:500px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px;
+  background: #fff;/*色は任意*/
+  box-sizing:border-box;
+  margin:0 !important;
+  line-height:1.5;
+
+/*   align-items: center; */
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.says_l p{
+  margin:8px 0 0 !important;
+}
+.says_l p:first-child{
+  margin-top:0 !important;
+}
+.says_l:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+/*   margin-top:-3px;  */
+}
+.balloon_l .says_l:after {
+  left: -33px;
+  border-right: 22px solid #000;
 }
