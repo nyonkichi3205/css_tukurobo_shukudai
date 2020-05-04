@@ -47,6 +47,32 @@
  z-index: 2;
 }
 
+/* 応募総数 */
+.example {
+  position: relative;
+  border: medium solid #ff6347
+;
+  }
+
+.example p {
+  font-size: 7vw;
+  color: #ff6347;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  /*文字の装飾は省略*/
+  }
+
+.example img {
+  width: 100%;
+  }
+
 /*youtubeレイアウト*/
 .youtube {
     position: relative;
