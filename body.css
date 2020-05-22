@@ -207,7 +207,7 @@
   font-size: 2vw;
   border:2px solid #000;
   font-weight: bold;
-  max-width:500px; /*最大幅は任意*/
+  max-width:800px; /*最大幅は任意*/
   display: flex;
   flex-wrap: wrap;
   position: relative;
