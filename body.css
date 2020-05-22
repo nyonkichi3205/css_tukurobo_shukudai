@@ -159,6 +159,25 @@
     margin: 0;
 }
 
+.ranking_special_box {
+    margin: 2em 0;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.ranking_special_box .box-title3 {
+    font-size: 3vw;
+    background: #008000;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.ranking_special_box p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
 /*吹き出し（機構おじさん）*/
 .balloon_l,
 .balloon_r{
