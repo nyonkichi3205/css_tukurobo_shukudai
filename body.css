@@ -240,3 +240,16 @@ img {
   left: -33px;
   border-right: 22px solid #000;
 }
+
+details {
+    border-radius: 6px;
+    padding: .5em .5em 0;
+}
+summary {
+    font-weight: bold;
+    font-size:3vw;
+    color: #000;
+    margin: -.3em -.3em 0;
+    padding: .5em;
+    text-align:center;
+}
