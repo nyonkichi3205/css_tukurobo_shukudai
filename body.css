@@ -85,6 +85,36 @@
   width: 100%;
   }
 
+/* 囲みタブ（内容） */
+.kakomi-tab2 {
+ position: relative;
+ margin: 3em auto;
+ padding: 1.2em 1em 1em;
+ font-weight: bold;
+ color: #555555;/*文字色*/
+ font-size: 25px;
+ width: 90%;
+ background-color: #fff; /*BOX背景色 */
+ border: 2px solid #d3d3d3; /* 枠線の太さ・色 */
+ box-shadow: 2px 2px 2px #ccc; /* 影の色 */
+ font-size: 3vw;
+}
+/* 囲みタブ（タイトル） */
+.title-tab2 {
+ position: absolute;
+ display: inline-block;
+ top: -31px; /*タブ調整 */
+ left: -2px; /*タブ調整 */
+ padding: 1px 10px;
+ height: 30px;
+ font-weight: bold;
+ font-size: 2vw;
+ color: #fff; /* タイトル色 */
+ background-color: #d3d3d3; /* タイトル背景色 */
+ border-radius: 8px 8px 0 0;
+}
+
+
 /*youtubeレイアウト*/
 .youtube {
     position: relative;
